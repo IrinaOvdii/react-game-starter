@@ -6,6 +6,7 @@ import {
   GAME_REMOVED,
   GAME_PLAYERS_UPDATED,
 } from '../actions/games/subscribe'
+import { MODIF_GAME } from '../actions/games/modifAction'
 
 export default (state = [], { type, payload } = {}) => {
   switch (type) {
@@ -49,6 +50,7 @@ export default (state = [], { type, payload } = {}) => {
 
     default :
       return state
+
 
   }
 }
